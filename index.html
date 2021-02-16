@@ -10,8 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 <body>
+
+    <div class="scrollTop-btn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
     <div class="header">
     <div class="container">
         <div class="navbar">
@@ -374,6 +379,15 @@
         }
     }
 </script>
+
+<script>
+    const scrollBtn = document.querySelector(".scrollTop-btn");
+
+        scrollBtn.addEventListener("click", () => {
+            window.scroll(0, 0);
+        });
+</script>
+
 
 </body>
 
