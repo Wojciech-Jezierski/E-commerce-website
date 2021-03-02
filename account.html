@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script defer src="validation.js"></script>
 </head>
 <body>
     <div class="container">
@@ -57,10 +59,11 @@
                         <button type="submit" class="btn">Login</button>
                         <a href="">Forgot Password</a>
                     </form>
-                    <form id="RegForm">
-                        <input type="text" placeholder="Username">
+                    <form id="RegForm" action="/" method="GET">
+                        <input type="text" id="name" placeholder="Username" required>
                         <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
+                        <input type="password" id="pass" placeholder="Password">
+                        <div id="error" style="color: red; font-size: 14px;"></div>
                         <button type="submit" class="btn">Sign Up</button>
                     </form>
                 </div>
@@ -146,5 +149,4 @@
 </script>
 
 </body>
-
-</html>
+</html> 
