@@ -331,6 +331,10 @@ ul {
         color: whitesmoke;
     }
 
+    nav ul li::after {
+        display: none;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
